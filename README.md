@@ -1,6 +1,5 @@
-[RU](https://github.com/Toaster-git/test_my_site/new/main?filename=README.md#ruru--описание-веб-сайта-для-проекта-dark-gdps) -- [EN](https://github.com/Toaster-git/test_my_site/new/main?filename=README.md#usen-website-description-for-the-dark-gdps-project)
 
-<br>
+
 
 ## :ru:RU  Описание веб-сайта для проекта DARK GDPS
 
@@ -16,8 +15,8 @@
 ### Технологии и цель разработки
 - **Стек технологий**: HTML, CSS, JavaScript
 - **Основная цель**: Практическое освоение создания и работы с веб-страницами
----
 
+<br>
 <br>
 <br>
 <br>
@@ -36,4 +35,4 @@ This website was developed for my friend's personal project — the private serv
 ### Technologies and Development Goal
 - **Tech Stack**: HTML, CSS, JavaScript
 - **Primary Goal**: Practical learning and mastering of creating and working with web pages.
----
+
