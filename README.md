@@ -1,7 +1,7 @@
 
 
 
-## :ru:RU  Описание веб-сайта для проекта DARK GDPS
+## :ru: RU Описание веб-сайта для проекта DARK GDPS
 
 ### О проекте
 Сайт разработан для личного проекта моего друга — приватного сервера **DARK GDPS** (Geometry Dash Private Server).
@@ -21,7 +21,7 @@
 <br>
 <br>
 
-## :us:EN Website Description for the DARK GDPS Project
+## :us: EN Website Description for the DARK GDPS Project
 
 ### About the Project
 This website was developed for my friend's personal project — the private server **DARK GDPS** (Geometry Dash Private Server).
