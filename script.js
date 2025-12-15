@@ -395,6 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         }
     }
+
     // ОТКРЫТИЕ МОБИЛЬНОГО МЕНЮ
     function openMobileMenu() {
         if (!DOM.sidebar || !DOM.overlay) return;
@@ -412,14 +413,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Обновляем позицию кнопки обновления
         updateRefreshButtonPosition();
         
-        // Блокируем прокрутку фона
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-        document.body.style.height = '100%';
-        document.body.style.top = `-${window.scrollY}px`;
+        // Блокируем скролл на основном контенте
+        document.body.classList.add('menu-open');
+        
+        // Запоминаем позицию скролла для возврата
+        if (!window.scrollPosition) {
+            window.scrollPosition = window.scrollY;
+        }
     }
-    
+
     // ЗАКРЫТИЕ МОБИЛЬНОГО МЕНЮ
     function closeMobileMenu() {
         if (!DOM.sidebar || !DOM.overlay) return;
@@ -437,16 +439,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Обновляем позицию кнопки обновления
         updateRefreshButtonPosition();
         
-        // Восстанавливаем прокрутку
-        const scrollY = document.body.style.top;
-        document.body.style.overflow = '';
-        document.body.style.position = '';
-        document.body.style.width = '';
-        document.body.style.height = '';
-        document.body.style.top = '';
+        // Разблокируем скролл на основном контенте
+        document.body.classList.remove('menu-open');
         
-        if (scrollY) {
-            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        // Возвращаем позицию скролла
+        if (window.scrollPosition !== undefined) {
+            window.scrollTo(0, window.scrollPosition);
+            delete window.scrollPosition;
         }
     }
     
@@ -518,11 +517,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+
     // ОБРАБОТКА ИЗМЕНЕНИЯ РАЗМЕРА ОКНА
     function handleResize() {
         // На десктопе всегда закрываем меню
         if (window.innerWidth > 992) {
-            closeMobileMenu();
+            // Сбрасываем состояние меню на десктопе
+            if (isMenuOpen) {
+                closeMobileMenu();
+            }
+        } else {
+            // На мобильных устройствах проверяем, нужно ли корректировать высоту сайдбара
+            const sidebar = DOM.sidebar;
+            if (sidebar && sidebar.classList.contains('open')) {
+                // Принудительно устанавливаем высоту сайдбара равной высоте окна
+                sidebar.style.height = '100vh';
+            }
         }
         
         // Обновляем кубики в футере
