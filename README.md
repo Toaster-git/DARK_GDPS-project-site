@@ -32,25 +32,39 @@ This website was developed for my friend's personal project — the private serv
 ---
 
 ## Лицензия / License
-[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+[![AGPL-3.0 License][agpl-shield]][agpl-url]
 
-Этот проект лицензирован на условиях [лицензии Creative Commons Attribution-NonCommercial 4.0 International][cc-by-nc].
-<br/> This project is licensed under the terms [licensed Creative Commons Attribution-NonCommercial 4.0 International][cc-by-nc].
+Этот проект лицензирован на условиях [GNU Affero General Public License версии 3.0][agpl-url].
+<br/>
 
-**Кратко о лицензии <br/> (Briefly about the license CC BY-NC 4.0):**
-*   **✅ Можно**: Свободно копировать, распространять и изменять материал. 
-*   **⚠️ Условие**: Обязательно указывать авторство (ссылку на оригинал). 
-*   **🚫 Нельзя**: Использовать материал в **коммерческих целях**.
-*   
-*   **✅ Can**: Freely copy, distribute and modify the material.
-*   **⚠️ Condition**: It is mandatory to indicate the authorship (link to the original).
-*   **🚫 Must not**: Use the material for **commercial purposes**.
+**Кратко о лицензии AGPL-3.0:**
+*   **✅ Свободное использование:**
+    *   **Запускать** программу с любой целью.
+    *   **Изучать**, как программа работает, и **адаптировать** её под свои нужды.
+    *   **Распространять** копии.
+    *   **Улучшать** программу и публиковать свои улучшения.
+*   **⚠️ Основное условие копилефта:**
+    *   Если вы распространяете или модифицируете эту программу, **вы обязаны предоставить получателям те же свободы**.
+    *   Это включает **обязательное предоставление полного исходного кода** вашей производной работы под той же лицензией AGPL-3.0.
+    *   **Ключевое отличие AGPL от GPL:** Это условие распространяется и на случай, если вы предоставляете доступ к модифицированной программе **через сеть (как веб-сервис)**. Пользователи, взаимодействующие с вашим сервисом, должны иметь возможность получить его исходный код.
+*   **🚫 Нет гарантий:**
+    *   Программа поставляется **«как есть» (as is)**. Автор не предоставляет гарантий.
 
-### Как указать авторство <br/>  How to Attribute
-При использовании этого кода, пожалуйста, укажите авторство следующим образом. <br/> If you use this code, please provide attribution as follows:
+---
+[![AGPL-3.0 License][agpl-shield]][agpl-url]
+<br/> This project is licensed under the terms [GNU Affero General Public License version 3.0][agpl-url].
+<br/> **Briefly about the AGPL-3.0**
+*   **✅ Free Use (Four Freedoms):**
+    *   **Run** the program for any purpose.
+    *   **Study** how the program works and **adapt** it to your needs.
+    *   **Distribute** copies.
+    *   **Improve** the program and publish your improvements.
+*   **⚠️ Main Copyleft Condition:**
+    *   If you distribute or modify this program, **you are obligated to grant recipients the same freedoms**.
+    *   This includes the **mandatory provision of the complete source code** of your derivative work under the same AGPL-3.0 license.
+    *   **Key difference between AGPL and GPL:** This condition also applies if you provide access to the modified program **over a network (as a web service)**. Users interacting with your service must be able to obtain its source code.
+*   **🚫 No Warranty:**
+    *   The program is provided **"as is"**. The author provides no warranties.
 
-> Проект "[DARK GDPS Website] (https://toaster-git.github.io/test_my_site/)" от toaster-git Лицензия CC BY-NC 4.0 <br>
-> Project "[DARK GDPS Website] (https://toaster-git.github.io/test_my_site/)" from toaster-git License CC BY-NC 4.0 <br>
-
-[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
-[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
+[agpl-url]: https://www.gnu.org/licenses/agpl-3.0.html
+[agpl-shield]: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
