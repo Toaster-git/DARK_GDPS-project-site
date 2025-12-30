@@ -109,29 +109,29 @@ document.addEventListener('DOMContentLoaded', function() {
             return [
 
                 {
-                    "title": "Обновление сайта",
+                    "title": "Тестовые данные",
                     "icon": "fas fa-code",
-                    "date": "2025-12-28",
-                    "content": "Переработка сайта для повышения читаемости интерфейса и улучшения отображения стилей.",
-                    "author": "Toaster",
-                    "category": "Разработка"
+                    "date": "Тестовые данные",
+                    "content": "Тестовые данные",
+                    "author": "Тестовые данные",
+                    "category": "Тестовые данные"
                 },     
                 {
-                    "title": "Обновление сайта",
+                    "title": "Тестовые данные",
                     "icon": "fas fa-code",
-                    "date": "2025-12-15",
-                    "content": "Сайт полностью переработал Toaster. Добавлил анимация кубиков в подвале сайта.",
-                    "author": "Toaster",
-                    "category": "Разработка"
-                },
+                    "date": "Тестовые данные",
+                    "content": "Тестовые данные",
+                    "author": "Тестовые данные",
+                    "category": "Тестовые данные"
+                },   
                 {
-                    "title": "Создание сайта",
-                    "icon": "fas fa-server",
-                    "date": "2025-08-13",
-                    "content": "Supercret сделал сайт",
-                    "author": "Supercret",
-                    "category": "Разработка"
-                },                    
+                    "title": "Тестовые данные",
+                    "icon": "fas fa-code",
+                    "date": "Тестовые данные",
+                    "content": "Тестовые данные",
+                    "author": "Тестовые данные",
+                    "category": "Тестовые данные"
+                },                      
             ];
         }
 
