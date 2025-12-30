@@ -688,7 +688,7 @@ a {
 .step-content li {
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
     position: relative;
 }
 
@@ -709,6 +709,11 @@ a {
     display: flex;
     gap: var(--spacing-md);
     align-items: flex-start;
+}
+
+.note-tip{
+        color: #f1de9c;
+
 }
 
 .note-icon {
