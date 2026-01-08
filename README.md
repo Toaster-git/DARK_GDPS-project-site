@@ -1,5 +1,122 @@
 # DARK GDPS Project Website
 
+**Language:** [РУССКИЙ](#русский) | [ENGLISH](#english)
+
+---
+
+# ENGLISH
+
+**Demo site:** [https://toaster-git.github.io/DARK_GDPS-project-site/](https://toaster-git.github.io/DARK_GDPS-project-site/)
+
+[![AGPL-3.0 License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
+
+A static website for the **DARK GDPS** project (Geometry Dash Private Server). This website serves as an information hub and was created as part of learning web development.
+
+## ✨ Features and Functionality
+
+*   **Dynamic Content Loading**: News and other content are loaded onto the page from an external JSON file (`news.json`), simplifying information updates without changing the HTML code.
+*   **Tab Navigation**: All content is placed on a single HTML page with smooth switching between sections (e.g., "Home", "News", "About the Server").
+*   **Clean and Responsive Interface**: A simple design using CSS that displays correctly on various devices.
+*   **Automatic Deployment**: Configured GitHub Actions workflow for automatic site publication on GitHub Pages when the main branch (`main`) is updated.
+
+## 🛠 Technologies
+
+The project is built on basic frontend technologies:
+*   **HTML5** – semantic page structure markup.
+*   **CSS3** – styling and visual design.
+*   **Vanilla JavaScript (ES6)** – implementation of dynamic logic (data loading, tab switching).
+*   **JSON** – format for storing and transmitting structured data.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+For local project launch, you only need a web browser and any text editor (e.g., VS Code, Sublime Text).
+
+### Installation and Local Launch
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Toaster-git/DARK_GDPS-project-site.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd DARK_GDPS-project-site
+    ```
+3.  **Launch the site:** Open the `index.html` file in your browser. You can do this by double-clicking.
+    </br></br> **But it is recommended** to use a local server.
+    </br> For example, using Python:
+    ```(cmd) python -m SimpleHTTPServer 8000 ```
+    </br> and without closing the console, go to ```(browser) http://localhost:8000```
+
+## 📖 Usage
+
+### How to Add News?
+
+1.  Open the `news.json` file.
+2.  Add a new object to the `news` array, following the existing format:
+    ```json
+    {
+      "title": "Your News Title",
+      "date": "2026-01-06",
+      "content": "News text. HTML markup is supported, for example, <b>bold text</b> or <a href='#'>links</a>."
+    }
+    ```
+3.  Save the file. When you refresh the browser page, the new news will automatically appear in the corresponding section of the site.
+
+### Project Structure
+
+```
+DARK_GDPS-project-site/
+├── index.html          # Main HTML file
+├── style.css           # Stylesheet file (CSS)
+├── script.js           # Main JavaScript logic
+├── news.json           # News data file (JSON)
+├── LICENSE             # Full AGPL-3.0 license text
+└── .github/workflows/  # CI/CD configuration directory (GitHub Actions)
+    └── static.yml      # Workflow for automatic deployment to GitHub Pages
+```
+
+## 🤝 Contributing
+
+Any contributions are welcome! If you have ideas for improving the design, functionality, or have found a bug:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or fix:
+    ```bash
+    git checkout -b feature/AmazingFeature
+    ```
+3.  Make changes and commit them:
+    ```bash
+    git commit -m 'Add some AmazingFeature'
+    ```
+4.  Push the changes to your fork:
+    ```bash
+    git push origin feature/AmazingFeature
+    ```
+5.  Open a Pull Request to the main repository.
+
+## 📄 License
+
+This project is distributed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. Detailed information can be found in the [LICENSE](LICENSE) file.
+
+**Briefly:** You are free to use, study, modify, and distribute this code, but if you provide a modified version of the program, including as a web service (website), you **must** make the source code of this modified version available to all users.
+
+## 📞 Contacts
+
+Project Author: **Toaster-git**
+*   GitHub: [https://github.com/Toaster-git](https://github.com/Toaster-git)
+</br>
+
+*   This project was created for my friend's personal Geometry Dash server project — DARK GDPS. (I'm surprised these exist:)
+
+---
+*If this project was useful to you, don't forget to give it a ⭐ star in the repository!*
+
+---
+
+# РУССКИЙ
+
 **Демо-сайт:** [https://toaster-git.github.io/DARK_GDPS-project-site/](https://toaster-git.github.io/DARK_GDPS-project-site/)
 
 [![AGPL-3.0 License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
@@ -40,7 +157,7 @@
 3.  **Запустите сайт:** Откройте файл `index.html` в вашем браузере. Вы можете сделать это двойным кликом
 </br></br> **Но рекомендуется** через локальный сервер.
 </br> Например через пайтон
-```(cmd) -m SimpleHTTPServer 8000 ```
+```(cmd) python -m SimpleHTTPServer 8000 ```
 </br> и не выключая консоль зайти в браузере на ```(browser) http://localhost:8000```
 
 ## 📖 Использование
